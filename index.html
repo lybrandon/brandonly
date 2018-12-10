@@ -8,29 +8,58 @@
   <style>
     body {
       background-image: url("");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
-      height: 100%;
+      background-position: center;
+      height: 50%;
     }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div.scrollmenu {
+    background-color: #FFFBD7;
+    overflow: auto;
+    white-space: nowrap;
+    background-image: url("images/tokyonight.gif");
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #EC5DFF;
+}
+</style>
 </head>
 
 <header>
-  <a href="index.html">
-    <h1>Brandon Ly</h1>
-  </a>
+  <div class="scrollmenu">
+  <a href="index.html"><h1>Brandon Ly</h1></a>
   <h3><a href="portfolio.html">Portfolio</a></h3>
   <h3><a href="statement.html">Artist Statement</a></h3>
   <h3><a href="contact.html">Contact</a></h3>
+</div>
 </header>
 
 <body>
-  <marquee><img src="images/snake.jpg" width="400">
-    <img src="images/budlight.jpg" width="400">
-    <img src="images/Zine.jpg" width="400">
+
+  <div class="scrollmenu">
+    <img src="images/snake.jpg" width="347">
     <img src="images/Inthekisser.jpg" width="400">
+    <img src="images/Zine.jpg" width="400">
+    <a href="https://lybrandon.github.io/netart/"><img src="images/74webart.jpg" width="400" height="337"></a>
+    <a href="https://lybrandon.github.io/lybrandon3.github.io/"><img src="images/75webart.jpg" width="400" height="337"></a>
+    <img src="images/budlight.jpg" width="400">
     <img src="images/lime.jpg" width="400">
     <img src="images/beware.jpg" width="400">
-  </marquee>
+    <img src="images/innout.jpg" width="400">
+  </div>
+
+</body>
 
 </html>
