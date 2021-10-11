@@ -9,6 +9,7 @@
   <style>
     body {
       background-image: url("");
+      background-color: #
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -36,6 +37,48 @@
       background-color: #EC5DFF;
       padding: 10px;
     }
+
+    .container {
+    position: relative;
+    width: 50%;
+    }
+
+    .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    }
+
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+    }
+
+    .container:hover .overlay {
+    opacity: 1;
+    }
+
+    .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+
+
   </style>
 </head>
 
@@ -54,23 +97,19 @@
 <body>
 
   <div class="scrollmenu">
-    <iframe src="https://player.vimeo.com/video/622812508?h=f7398cc9c1&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+    <iframe src="https://player.vimeo.com/video/622812508?h=f7398cc9c1&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="300" frameborder="5" allow="autoplay; fullscreen; picture-in-picture"
       allowfullscreen title="Ball Animation"></iframe>
     <iframe src="https://player.vimeo.com/video/622778588?h=d0a049c9d3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="540" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="animation.mp4"></iframe>
     <iframe src="https://player.vimeo.com/video/303466138?h=4cb46e6f67&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="540" height="300" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="MadMapper"></iframe>
     <iframe width="400" height="300" src="https://www.youtube.com/embed/peQHAQhawAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <img src="images/doodle2.jpg" width="400" height="300">
-    <img src="images/screenprint.jpg" width="400" height="300">
-    <img src="images/screenprint2.jpg" width="400" height="300">
+    <a href="techpage.html"><img src="images/doodle2.jpg" width="400" height="300"></a>
+    <a href="welcomehome.html"><img src="images/screenprint2.jpg" width="400" height="300"></a>
   </div>
 
   <div class="scrollmenu">
-    <img src="images/Inthekisser.jpg" width="400" height="300">
+    <a href="yeezus.html"><img src="images/Inthekisser.jpg" width="400" height="300"></a>
     <img src="images/doodle4.jpg" width="400" height="300">
-    <img src="images/snake.jpg" width="400" height="300">
-    <img src="images/doodle7.jpg" width="400" height="300">
-    <img src="images/Zine.jpg" width="400" height="300">
-    <img src="images/budlight.jpg" width="400" height="300">
+    <a href="Zine.html"><img src="images/snake.jpg" width="400" height="300"></a>
     <a href="https://lybrandon.github.io/lybrandon3.github.io/"><img src="images/75webart.jpg" width="400" height="300"></a>
 
   </div>
