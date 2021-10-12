@@ -2,112 +2,48 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font: Verdana, sans-serif;
-    }
-
-    .mySlides {
-      display: none;
-    }
-
-    img {
-      vertical-align: middle;
-    }
-
-    /* Slideshow container */
-    .slideshow-container {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-    }
-
-    /* Caption text */
-    .text {
-      color: #yellow;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 8px;
-      width: 100%;
+      margin: 50px;
       text-align: center;
     }
 
-    /* Number text (1/3 etc) */
-    .numbertext {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
+    h1 {
+      color: black;
     }
 
-    /* The dots/bullets/indicators */
-    .dot {
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+    img {
+      float: left;
+      margin: 10px;
     }
 
-    .active {
-      background-color: #717171;
+    p {
+      text-align: left;
+      font-size: 18px;
     }
 
-    /* Fading animation */
-
-    h2 {
-      font-family: monospace;
-      font-size: 70px;
-      font-color: white;
+    div.scrollmenu {
+        background-color: #;
+        overflow: auto;
+        white-space: nowrap;
     }
 
-    .fade {
-      -webkit-animation-name: fade;
-      -webkit-animation-duration: 6s;
-      animation-name: fade;
-      animation-duration: 2.3;
+    div.scrollmenu a {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
     }
 
-    @-webkit-keyframes fade {
-      from {
-        opacity: .4
-      }
-
-      to {
-        opacity: 1
-      }
-    }
-
-    @keyframes fade {
-      from {
-        opacity: .4
-      }
-
-      to {
-        opacity: 1
-      }
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-      .text {
-        font-size: 15px
-      }
+    div.scrollmenu a:hover {
+        background-color: #EC5DFF;
     }
 
     .container {
   position: relative;
-  width: 50%;
+  width: 40%;
 }
 
 .image {
@@ -136,11 +72,11 @@
 .text {
   color: white;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
+  position: bottom;
+  bottom: : 75%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-5 0%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -148,7 +84,7 @@
   </style>
 </head>
 
-<body>
+
 
   <header>
     <div class="scrollmenu">
@@ -156,71 +92,56 @@
         <h1>Brandon Ly</h1>
       </a>
       <h3><a href="about.html">About</a></h3>
+      <!-- <h3><a href="statement.html">Artist Statement</a></h3> -->
       <h3><a href="contact.html">Contact</a></h3>
 
     </div>
   </header>
 
-      <!-- <h3><a href="about.html">About</a></h3> -->
-      <!-- <h3><a href="statement.html">Artist Statement</a></h3> -->
-      <!-- <h3><a href="contact.html">Contact</a></h3> -->
+<body>
 
-  <h3 style="text-align: center;">We Want You, Zine, 2019 </h3>
 
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <center><img src="images/snake.jpg" style="width:40%"></center>
-      <div class="text">"Smoking Kills" Zine , 2019</div>
+    <div class="container">
+    <img src="images/snake.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">"'Yeezus Christ'Digital Print, 2019"
+      </div>
     </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <center><img src="images/Budlight.jpg" style="width:40%"></center>
-      <div class="text">"Budlight" Zine, 2019</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"> 3/ 3</div>
-      <center><img src="images/Zine.jpg" style="width:40%"></center>
-      <div class="text">"The Truth" Zine, 2019</div>
-    </div>
-
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
   </div>
 
-  <!-- <center><button type="button" onclick="alert('Hello world!')">Click Me!</button></center> -->
+  <div class="container">
+  <img src="images/Zine.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">"'Yeezus Christ'Digital Print, 2019"
+    </div>
+  </div>
+</div>
 
-  <script>
-    var slideIndex = 0;
-    showSlides();
+  <div class="container">
+  <img src="images/budlight.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">"'Yeezus Christ'Digital Print, 2019"
+    </div>
+  </div>
+</div>
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
-  </script>
+<div class="container">
+<img src="images/beware.jpg" alt="Avatar" class="image">
+<div class="overlay">
+  <div class="text">"'Yeezus Christ'Digital Print, 2019"
+  </div>
+</div>
+</div>
+
+
+
+      <h3 style="text-align: left;"> <b>We Want You </b>, Zine, 2019 </h3>
+      <p>
+    I made of Zine of fake advirtisements. After finishing everything it ended up looking like a bunch of memes.
+    Now this is kind of my book of memes ranging from serious subjects to not so serious topics ranging from
+    teenage vape usage to the surveilence of personal drones. Once again, you can create alot of fun and ridiculous things on photoshop. 
+      </p>
+
 
 </body>
 
